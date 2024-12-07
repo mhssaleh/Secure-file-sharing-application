@@ -1,0 +1,140 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff; /* White */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333333; /* Dark gray */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #0056b3; /* Primary blue */
+}
+
+h2 {
+    font-size: 24px;
+    color: #007bff; /* Bright blue */
+}
+
+/* Paragraphs */
+p {
+    color: #555555; /* Medium gray */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+a.button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 25px;
+    background-color: #007bff; /* Bright blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a.button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05);
+}
+
+a.secondary-button {
+    background-color: #6c757d; /* Gray */
+    color: white;
+}
+
+a.secondary-button:hover {
+    background-color: #5a6268; /* Darker gray */
+    transform: scale(1.05);
+}
+
+/* Messages */
+.message {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    border: 1px solid #c3e6cb; /* Green border */
+}
+
+.message.danger {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red */
+    border: 1px solid #f5c6cb; /* Red border */
+}
+
+.message.info {
+    background-color: #d1ecf1; /* Light blue */
+    color: #0c5460; /* Dark blue */
+    border: 1px solid #bee5eb; /* Blue border */
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Very light gray */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h3 {
+    font-size: 18px;
+    color: #0056b3; /* Primary blue */
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 14px;
+    color: #555555; /* Medium gray */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777777; /* Light gray */
+}

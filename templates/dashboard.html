@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ session['username'] }}!</h2>
+        <p>This is your secure dashboard. Here you can manage your files and perform secure operations.</p>
+        <div class="dashboard-card">
+            <h3>Upload Files</h3>
+            <p>Securely upload and encrypt your files.</p>
+            <a href="{{ url_for('upload_file') }}" class="button">Upload Files</a>
+        </div>
+        <div class="dashboard-card">
+            <h3>View Files</h3>
+            <p>Access your uploaded files securely.</p>
+            <a href="{{ url_for('list_files') }}" class="button">View Files</a>
+        </div>
+        <a href="{{ url_for('logout') }}" class="button">Logout</a>
+    </div>
+</body>
+</html>
